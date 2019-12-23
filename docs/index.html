@@ -37,8 +37,10 @@
   
   <script>
     document.addEventListener('DOMContentLoaded', function(){
-        var elem = document.getElementById("#canvas") 
-        elem.webkitRequestFullScreen()
+        setTimeout(function(){ 
+              var elem = document.getElementById("#canvas") 
+              elem.webkitRequestFullScreen()
+        }, 500);
     });
   </script>
 </html>
