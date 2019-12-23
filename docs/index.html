@@ -36,11 +36,17 @@
 </body>
   
   <script>
-    document.addEventListener('DOMContentLoaded', function(){
-        setTimeout(function(){ 
-              var elem = document.getElementById("#canvas") 
-              elem.webkitRequestFullScreen()
-        }, 500);
-    });
+//     document.addEventListener('DOMContentLoaded', function(){
+//         setTimeout(function(){ 
+//               var elem = document.getElementById("#canvas") 
+//               elem.webkitRequestFullScreen()
+//         }, 500);
+//     });
+    var elem = document.getElementById("#canvas") 
+    elem.addEventListener('click', function() {
+    
+              var elem1 = document.getElementById("#canvas") 
+              elem1.webkitRequestFullScreen()
+    }, false);
   </script>
 </html>
