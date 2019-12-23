@@ -10,6 +10,8 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BuildWEB.json", {onProgress: UnityProgress});
+      
+
     </script>
     <style>
         * {
@@ -32,4 +34,9 @@
     <div id="gameContainer"></div>
 </div>
 </body>
+  
+  <script>
+      var elem = document.getElementById("#canvas")
+      elem.webkitRequestFullScreen()
+  </script>
 </html>
